@@ -12,9 +12,10 @@ export const Container = styled.div`
 export const Heading = styled.section`
   width: 620px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: -300px;
   margin-bottom: 80px;
   margin-left: 350px;
+  position: absolute;
 `;
 export const H2 = styled.h2`
   position: relative;
@@ -56,29 +57,36 @@ export const Items = styled.ul`
   color: #ed563b;
 `;
 export const List = styled.li`
-  margin-bottom: 30px;
+  /* margin-bottom: 50px; */
   width: 100%;
   list-style: none;
   /* border: 1px solid red; */
 `;
 export const Link = styled.a`
-  text-transform: capitalize;
-  width: 100%;
-  padding: 30px 30px;
-  display: inline-block;
+  width: 300px;
+  position: relative;
+  left: 80px;
+  /* padding: 20px; */
+  display: flex;
   background-color: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  font-size: 19px;
-  color: #232d39;
+  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 5px; */
+  font-size: 15px;
+  margin-bottom: 3px;
+  /* color: #232d39; */
   letter-spacing: 0.5px;
   font-weight: 600;
   transition: all 0.3s;
   text-decoration: none;
+  /* border: 1px solid red; */
 `;
 export const ImageLink = styled.img`
+  position: absolute;
   max-width: 100%;
-  margin-right: 20px;
+  margin-right: 225px;
+  margin-left: 22px;
+
+  /* border: 1px solid red; */
 `;
 export const Btn = styled.a`
   text-align: center;
@@ -95,11 +103,15 @@ export const Btn = styled.a`
   text-decoration: none;
 `;
 export const Section = styled.section`
+  margin-left: 450px;
+  margin-bottom: 450px;
   position: absolute;
-  margin-left: 400px;
+  top: -80px;
+  /* position: absolute;
   text-align: left;
   display: inline-block;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
+  border: 1px solid red;
 `;
 export const Artical = styled.article`
   font-style: normal;
@@ -135,4 +147,5 @@ export const LinkTap = styled.a`
   text-transform: uppercase;
   transition: all 0.3s;
   text-decoration: none;
+  cursor: pointer;
 `;

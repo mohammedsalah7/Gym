@@ -35,7 +35,7 @@ export const H6 = styled.h6`
 `;
 
 export const H2 = styled.h2`
-  margin-top: 30px;
+  margin-top: 17px;
   margin-bottom: 25px;
   font-size: 84px;
   text-transform: uppercase;
@@ -52,16 +52,12 @@ export const Span = styled.span`
 
 export const Link = styled.a`
   display: inline-block;
-  font-size: 13px;
-  padding: 11px 17px;
+  font-size: 15px;
+  padding: 12px 20px;
   background-color: #ed563b;
   color: #fff;
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 0px;
+  font-weight: 400;
   text-transform: uppercase;
-  transition: all 0.3s;
-  height: auto;
-  line-height: 20px;
   text-decoration: none;
 `;
