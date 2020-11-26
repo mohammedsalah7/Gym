@@ -57,13 +57,16 @@ const useStyles = makeStyles((e) => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     // opacity: "1",
-    marginTop: "150px",
+    marginTop: "350px",
+    // marginBottom: "350px",
     color: "red",
     width: "100%",
     height: "1000px",
-    position: "relative",
-    top: "200px",
+    // position: "re",
+    // top: "3000px",
+    bottom: "10px",
     fontFamily: "'Poppins', sans-serif",
+    // border: "10px solid blue",
   },
   app: {
     backgroundColor: "unset",
@@ -72,22 +75,24 @@ const useStyles = makeStyles((e) => ({
     padding: "0px",
     // border: "1px solid red",
     width: "700px",
-    position: "absolute",
-    top: "310px",
-    left: "240px",
+    // position: "absolute",
+    top: "290px",
+    left: "260px",
 
     // height: "50px",
     // overflow: "visible ",
   },
   TabPanel: {
     // border: "1px solid blue",
-    position: "absolute",
-    left: "280px",
-    top: "390px",
+    // position: "absolute",
+    marginTop: "280px",
+    marginLeft: "320px",
+    // left: "280px",
+    // top: "390px",
     // zIndex: "-999",
   },
   tab: {
-    position: "relative",
+    // position: "relative",
     left: "153px",
     color: "white",
     textTransform: "none",
@@ -198,27 +203,36 @@ export default function SimpleTabs() {
             textColor="primary"
           >
             <Tab
+              disableTouchRipple={true}
               // wrapped={true}
               className={classes.tab}
               label={"Monday  /"}
               {...a11yProps(0)}
             />
             <Tab
+              disableTouchRipple={true}
               className={classes.tab2}
               label={" Tuesday /"}
               {...a11yProps(1)}
             />
             <Tab
+              disableTouchRipple={true}
               className={classes.tab3}
               label={" Wednesday   /"}
               {...a11yProps(2)}
             />
             <Tab
+              disableTouchRipple={true}
               className={classes.tab4}
               label=" Thursday   /"
               {...a11yProps(2)}
             />
-            <Tab className={classes.tab5} label={" Friday"} {...a11yProps(2)} />
+            <Tab
+              disableTouchRipple={true}
+              className={classes.tab5}
+              label={" Friday"}
+              {...a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
         <TabPanel className={classes.TabPanel} value={value} index={0}>

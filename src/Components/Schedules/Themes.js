@@ -23,8 +23,8 @@ export const themes = createMuiTheme({
   typography: {
     button: {
       // backgroundColor: "blue",
-      width: "12px",
-      border: "10px solid 1px",
+      // width: "12px",
+      // border: "10px solid 1px",
       whiteSpace: "0px",
       textTransform: "none",
     },

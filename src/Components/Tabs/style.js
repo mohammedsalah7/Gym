@@ -91,9 +91,9 @@ export const ImageLink = styled.img`
 export const Btn = styled.a`
   text-align: center;
   padding: 20px 30px;
-  width: 100%;
+  width: 300px;
+  height: 68px;
   border-radius: 5px;
-  display: inline-block;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   color: #fff;
   font-size: 19px;
@@ -101,17 +101,14 @@ export const Btn = styled.a`
   font-weight: 600;
   background-color: #ed563b;
   text-decoration: none;
+  margin-top: 430px;
+  margin-left: 80px;
 `;
 export const Section = styled.section`
   margin-left: 450px;
   margin-bottom: 450px;
   position: absolute;
   top: -80px;
-  /* position: absolute;
-  text-align: left;
-  display: inline-block;
-  /* transition: all 0.3s; */
-  border: 1px solid red;
 `;
 export const Artical = styled.article`
   font-style: normal;
@@ -147,5 +144,5 @@ export const LinkTap = styled.a`
   text-transform: uppercase;
   transition: all 0.3s;
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 `;

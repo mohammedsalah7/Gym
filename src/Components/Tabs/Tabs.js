@@ -25,6 +25,7 @@ import {
   Info,
   ImgTab,
   LinkTap,
+  Btn,
 } from "./style";
 import { Button } from "@material-ui/core";
 function TabPanel(props) {
@@ -143,7 +144,6 @@ function Gallary() {
       </Heading>
       <Tabs
         orientation="vertical"
-        // variant="standard"
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
@@ -152,6 +152,7 @@ function Gallary() {
         textColor="primary"
       >
         <Tab
+          disableTouchRipple={true}
           color="primary"
           label={
             <>
@@ -163,6 +164,7 @@ function Gallary() {
           className={classes.tab}
         />
         <Tab
+          disableTouchRipple={true}
           selected={true}
           label={
             <>
@@ -173,6 +175,7 @@ function Gallary() {
           className={classes.tab}
         />
         <Tab
+          disableTouchRipple={true}
           label={
             <>
               <ImageLink src={tabs} />
@@ -182,6 +185,7 @@ function Gallary() {
           className={classes.tab}
         />
         <Tab
+          disableTouchRipple={true}
           label={
             <>
               <ImageLink src={tabs} />
@@ -267,6 +271,7 @@ function Gallary() {
           </Artical>
         </Section>{" "}
       </TabPanel>
+      <Btn href="#1">View Schedule</Btn>
     </div>
   );
 }

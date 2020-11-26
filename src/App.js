@@ -9,6 +9,8 @@ import { ThemeProvider } from "@material-ui/core";
 import { theme } from "./Components/Tabs/Theme";
 import { themes } from "./Components/Schedules/Themes";
 
+import Export from "./Components/expert";
+
 import SimpleTabs from "./Components/Schedules/indexs";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <ThemeProvider theme={themes}>
         <SimpleTabs />
       </ThemeProvider>
+      <Export />
     </div>
   );
 }
