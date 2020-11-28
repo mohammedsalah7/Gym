@@ -14,7 +14,6 @@ export default function Home() {
           <H2>
             easy with our <Span>gym</Span>
           </H2>
-
           <Link>Become a member</Link>
         </Caption>
       </Section>

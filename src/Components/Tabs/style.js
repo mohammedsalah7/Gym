@@ -12,10 +12,11 @@ export const Container = styled.div`
 export const Heading = styled.section`
   width: 620px;
   text-align: center;
-  margin-top: -300px;
+  margin-top: -100px;
   margin-bottom: 80px;
   margin-left: 350px;
   position: absolute;
+  border: 1px solid red;
 `;
 export const H2 = styled.h2`
   position: relative;
@@ -91,7 +92,7 @@ export const ImageLink = styled.img`
 export const Btn = styled.a`
   text-align: center;
   padding: 20px 30px;
-  width: 300px;
+  width: 350px;
   height: 68px;
   border-radius: 5px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -101,18 +102,21 @@ export const Btn = styled.a`
   font-weight: 600;
   background-color: #ed563b;
   text-decoration: none;
-  margin-top: 430px;
-  margin-left: 80px;
+  margin-top: 630px;
+  margin-left: 30px;
 `;
 export const Section = styled.section`
   margin-left: 450px;
   margin-bottom: 450px;
   position: absolute;
-  top: -80px;
+  /* top: -80px; */
 `;
 export const Artical = styled.article`
-  font-style: normal;
-  color: #ed563b;
+  margin-top: 126px;
+  margin-left: 60px;
+  width: 700px;
+  height: 548.35px;
+  /* border: 1px solid red; */
 `;
 export const ImgTab = styled.img`
   max-width: 100%;

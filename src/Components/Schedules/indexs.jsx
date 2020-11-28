@@ -8,13 +8,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import icon from "../../images/schedule-bg.jpg";
-// import Schedules from "../Tabel/index";
 import { Table, TBody, Tr, Td } from "../Tabel/styleTable";
 
 import icon1 from "../../images/line-dec.png";
 import { Container, H2, Parghraph, Image, Span } from "./style";
-// import "./style.css";
-// import { Container } from "@material-ui/core";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

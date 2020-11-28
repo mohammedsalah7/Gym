@@ -1,11 +1,6 @@
 import React from "react";
 import waves from "../../images/line-dec.png";
 import incon from "../../images/features-first-icon.png";
-// import scoend from "../../images/line-dec.png";
-// import thered from "../../images/line-dec.png";
-// import fourth from "../../images/line-dec.png";
-// import sixth from "../../images/line-dec.png";
-// import fiveth from "../../images/line-dec.png";
 import {
   Container,
   Heading,

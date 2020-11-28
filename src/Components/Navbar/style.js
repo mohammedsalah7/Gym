@@ -86,19 +86,3 @@ export const Link = styled.a`
     color: #ed563b;
   }
 `;
-
-// export const Btn = styled.button`
-//   display: block;
-//   font-weight: 700;
-//   border: transparent;
-//   font-family: "Poppins", sans-serif;
-//   text-decoration: none;
-//   font-size: 13px;
-//   height: 40px;
-//   line-height: 40px;
-//   letter-spacing: 1px;
-//   border: 1px solid red;
-//   margin-top: 10px;
-//   text-decoration: none;
-//   text-transform: uppercase;
-// `;

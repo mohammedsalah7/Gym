@@ -36,8 +36,7 @@ export default function Contact() {
       <Right>
         {" "}
         <ArticleRight>
-          <Form id="contact" action="" method="post">
-            {/* <fieldset> */}
+          <Form method="post">
             <InputName
               name="name"
               type="text"
@@ -45,8 +44,7 @@ export default function Contact() {
               placeholder="Your Name*"
               required=""
             />
-            {/* </fieldset> */}
-            {/* <fieldset> */}
+
             <InputEmail
               name="email"
               type="text"
@@ -55,16 +53,14 @@ export default function Contact() {
               placeholder="Your Email*"
               required=""
             />
-            {/* </fieldset> */}
-            {/* <fieldset> */}
+
             <Input
               name="subject"
               type="text"
               id="subject"
               placeholder="Subject"
             />
-            {/* </fieldset> */}
-            {/* <fieldset> */}
+
             <TextArea
               name="message"
               rows="6"
@@ -72,16 +68,11 @@ export default function Contact() {
               placeholder="Message"
               required=""
             ></TextArea>
-            {/* </fieldset> */}
-            {/* <fieldset> */}
-            <Btn type="submit" id="form-submit" class="main-button">
-              Send Message
-            </Btn>
-            {/* </fieldset> */}
+            <Btn type="submit">Send Message</Btn>
           </Form>
         </ArticleRight>
       </Right>
-      <Footer class="col-lg-12">
+      <Footer>
         <FooterHeader>
           Copyright &copy; 2020 Training Studio - Designed by{" "}
           <Link
