@@ -12,6 +12,7 @@ import { themes } from "./Components/Schedules/Themes";
 import Export from "./Components/expert";
 
 import SimpleTabs from "./Components/Schedules/indexs";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <SimpleTabs />
       </ThemeProvider>
       <Export />
+      <Contact />
     </div>
   );
 }

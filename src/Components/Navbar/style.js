@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.nav`
+  /* position: sticky; */
   width: 1140px;
   display: flex;
   justify-content: space-between;
