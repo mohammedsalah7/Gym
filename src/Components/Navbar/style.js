@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ export const Nav = styled.nav`
   background-color: transparent;
   z-index: 999;
 `;
+
 export const Logo = styled.a`
   line-height: 80px;
   color: #fff;
@@ -53,6 +55,9 @@ export const Items = styled.li`
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
+  /* .active {
+    background-color: red;
+  } */
   &:nth-child(1) a {
     color: #ed563b;
   }
@@ -71,7 +76,23 @@ export const Items = styled.li`
     line-height: 20px;
   }
 `;
-export const Link = styled.a`
+export const LinkNav = styled(NavLink)`
+  display: block;
+  font-weight: 500;
+  border: transparent;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  &:hover {
+    color: #ed563b;
+  }
+`;
+
+export const Ancor = styled.a`
   display: block;
   font-weight: 500;
   border: transparent;

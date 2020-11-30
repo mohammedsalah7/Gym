@@ -2,7 +2,7 @@ import React from "react";
 import gym from "../../images/gym-video.mp4";
 import { Container, Link, Section, H6, H2, Span, Caption } from "./style.js";
 
-export default function Home() {
+export default function Bxs() {
   return (
     <Container>
       <video autoplay="autoplay" muted loop="loop" id="bg-video">

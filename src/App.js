@@ -1,30 +1,70 @@
 import "./App.css";
-import Home from "./Page/Home";
-import TopNav from "./Components/Navbar";
-import About from "./Components/About";
-import { ThemeProvider } from "@material-ui/core";
-import { theme } from "./Components/Tabs/Theme";
-import { themes } from "./Components/Schedules/Themes";
-import Classes from "./Components/Classes/index";
-import Export from "./Components/expert";
+import Index from "./Page/Index";
+import Signup from "./Page/Signup";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useReducer, createContext } from "react";
 
-import SimpleTabs from "./Components/Schedules/indexs";
-import Contact from "./Components/Contact";
+const initState = {
+  isLoggedIn: false,
+  name: "",
+  isAuthenticated: false,
+  errors: {},
+};
 
+function loginReducer(state, action) {
+  switch (action.type) {
+    case "login":
+      window.localStorage.setItem("isLoggedIn", true);
+      window.localStorage.setItem("name", action.payload);
+      return {
+        isLoggedIn: true,
+        isLoading: false,
+        name: action.payload,
+        error: "",
+      };
+    case "signup":
+      window.localStorage.setItem("name", action.payload);
+      return {
+        isLoggedIn: true,
+        isLoading: false,
+        name: action.payload,
+        error: "",
+      };
+    case "logout":
+      window.localStorage.setItem("isLoggedIn", false);
+      window.localStorage.setItem("name", "");
+
+      return { isLoggedIn: false, name: "", error: "", isLoading: false };
+    case "error":
+      return { ...state, error: action.error };
+    case "loading":
+      return { ...state, isLoading: true };
+
+    default:
+      throw new Error("Invalid action type");
+  }
+}
+export const LoginsContext = createContext({
+  state: initState,
+  dispatch: null,
+});
 function App() {
+  const [state, dispatch] = useReducer(loginReducer, initState);
+
   return (
     <div className="App">
-      <TopNav />
-      <Home />
-      <About />
-      <ThemeProvider theme={theme}>
-        <Classes />
-      </ThemeProvider>
-      <ThemeProvider theme={themes}>
-        <SimpleTabs />
-      </ThemeProvider>
-      <Export />
-      <Contact />
+      <Router>
+        <Switch>
+          <LoginsContext.Provider value={{ state, dispatch }}>
+            <Route exact path="/">
+              <Index />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
+          </LoginsContext.Provider>
+        </Switch>
+      </Router>
     </div>
   );
 }

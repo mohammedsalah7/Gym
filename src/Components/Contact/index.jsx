@@ -17,7 +17,7 @@ import {
 } from "./style";
 export default function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Left>
         {" "}
         <ArticleLeft>

@@ -30,7 +30,7 @@ import {
 export default function Export() {
   return (
     <>
-      <Heading>
+      <Heading id="schedules">
         <H2>
           Expert <Span>Trainers</Span>
         </H2>

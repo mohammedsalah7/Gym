@@ -26,7 +26,7 @@ import {
 } from "./style.js";
 export default function About() {
   return (
-    <Container>
+    <Container id="about">
       <Heading>
         <H2>
           Choose <Span>Program</Span>

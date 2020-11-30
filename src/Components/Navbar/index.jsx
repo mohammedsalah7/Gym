@@ -1,5 +1,15 @@
 import React from "react";
-import { Container, Nav, Logo, All, Items, Link, Span } from "./style.js";
+
+import {
+  Container,
+  Nav,
+  Logo,
+  All,
+  Items,
+  LinkNav,
+  Span,
+  Ancor,
+} from "./style.js";
 
 export default function TopNav() {
   return (
@@ -10,22 +20,24 @@ export default function TopNav() {
         </Logo>
         <All>
           <Items>
-            <Link href="#top">Home</Link>
+            <LinkNav exact to="/">
+              Home
+            </LinkNav>
           </Items>
           <Items>
-            <Link href="#A">About</Link>
+            <Ancor href="#about">About</Ancor>
           </Items>
           <Items>
-            <Link href="#our-classes">Classes</Link>
+            <Ancor href="#classes">Classes</Ancor>
           </Items>
           <Items>
-            <Link href="#schedule">Schedules</Link>
+            <Ancor href="#schedules">Schedules</Ancor>
           </Items>
           <Items>
-            <Link href="#contact-us">Contact</Link>
+            <Ancor href="#contact">Contact</Ancor>
           </Items>
           <Items>
-            <Link href="#1">Sign Up</Link>
+            <LinkNav to="/signup">Sign Up</LinkNav>
           </Items>
         </All>
       </Nav>
