@@ -47,7 +47,7 @@ export const All = styled.ul`
   flex-wrap: wrap;
   margin-top: 20px;
   &:first-child {
-    color: black;
+    /* color: black; */
   }
 `;
 export const Items = styled.li`
@@ -55,12 +55,11 @@ export const Items = styled.li`
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
-  /* .active {
-    background-color: red;
-  } */
-  &:nth-child(1) a {
+  .active {
     color: #ed563b;
+    /* background-color: red; */
   }
+
   &:last-child a {
     display: inline-block;
     font-size: 13px;

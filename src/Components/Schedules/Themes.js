@@ -38,6 +38,11 @@ export const themes = createMuiTheme({
         height: "5px",
         textTransform: "none",
       },
+      root: {
+        maxWidth: "450px ",
+        width: "350px ",
+        fontFamily: "'Poppins', sans-serif",
+      },
     },
   },
 });

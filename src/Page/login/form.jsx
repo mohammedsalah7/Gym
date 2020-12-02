@@ -1,38 +1,27 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../../Components/Input";
-import { LoginsContext } from "../../App";
 import { Form, Container, H2, Span } from "./style";
 import { RegisterBtn, LogInBtn } from "../../Components/Button";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
 import * as yup from "yup";
-// import "./style.css";
 const initState = {
   email: "",
-  userName: "",
   password: "",
-  rePassword: "",
-  birthDate: "",
   error: "",
 };
 const schema = yup.object().shape({
   email: yup.string().email().required(),
-  userName: yup.string().required(),
-  password: yup.string().required().min(9),
-  birthDate: yup.string().required(),
-  rePassword: yup
-    .string()
-    .oneOf([yup.ref("password"), null], "Passwords must match")
-    .required(),
+  password: yup.string().required(),
 });
 
 function Forms() {
-  const { dispatch } = useContext(LoginsContext);
+  // const { dispatch } = useContext(LoginsContext);
   const history = useHistory();
   const [state, setState] = useState(initState);
   const [errors, setErrors] = useState(initState);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const { email, userName, password, rePassword, birthDate, error } = state;
+  const { email, password, error } = state;
 
   useEffect(() => {
     let mount = true;
@@ -43,10 +32,7 @@ function Forms() {
           if (mount) {
             setErrors({
               email: "",
-              userName: "",
               password: "",
-              rePassword: "",
-              birthDate: "",
             });
           }
         })
@@ -65,15 +51,11 @@ function Forms() {
       mount = false;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isSubmitted, email, userName, password, rePassword, birthDate]);
+  }, [isSubmitted, email, password]);
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
-    // let _value = value;
-    // if (id === "checked") {
-    //   _value = checked;
-    // }
-    setState({ ...state, [id]: value });
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -81,14 +63,11 @@ function Forms() {
     setIsSubmitted(true);
     if (!error) {
       axios
-        .post("https://fake-api-ahmed.herokuapp.com/v1/auth/signup", {
+        .post("https://fake-api-ahmed.herokuapp.com/v1/auth/login", {
           email,
           password,
         })
         .then((res) => {
-          let { value } = e.target;
-          value = state.userName;
-          dispatch({ type: "signup", payload: value });
           history.push("/");
         })
         .catch((err) => {
@@ -119,52 +98,26 @@ function Forms() {
           label="Email address"
           error={errors.email}
         />
-        <Input
-          handleChange={handleChange}
-          name="userName"
-          type="text"
-          placeholder="Enter Your Name"
-          value={userName}
-          label="User Name"
-          id="userName"
-          error={errors.userName}
-        />
-        <Input
-          handleChange={handleChange}
-          id="birthDate"
-          name="birthDate"
-          type="date"
-          placeholder="Enter Your date"
-          value={birthDate}
-          label="Date of birth"
-          error={errors.birthDate}
-        />
+
         <Input
           handleChange={handleChange}
           name="password"
           type="password"
           placeholder="Enter Your password"
           value={password}
-          label="Create password"
+          label="Enter password"
           id="password"
           error={errors.password}
         />
-        <Input
-          handleChange={handleChange}
-          name="rePassword"
-          type="password"
-          placeholder="Repeat password"
-          value={rePassword}
-          label="Repeat password"
-          id="rePassword"
-          error={errors.rePassword}
-        />
-        <RegisterBtn type=" submit" className="register-btn-signup">
-          Register
-        </RegisterBtn>
-        <Link to="/login" className="link-page">
-          <LogInBtn className="login-btn-signup"> Log In</LogInBtn>
+        {/* {error && <span>{error}</span>} */}
+
+        <Link to="/" className="link-page">
+          <RegisterBtn className="register-btn-signup">Register</RegisterBtn>
         </Link>
+        <LogInBtn type=" submit" className="login-btn-signup">
+          {" "}
+          Log In
+        </LogInBtn>
       </Form>
     </div>
   );

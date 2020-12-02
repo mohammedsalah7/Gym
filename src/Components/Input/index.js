@@ -1,14 +1,14 @@
 import React from "react";
-import "./style.css";
+import { Container, Inputs, Label } from "./style.js";
 function Input(props) {
   const { handleChange, name, type, value, label, placeholder, error } = props;
   return (
-    <div className="contanier-input">
-      <label className="title-label" htmlFor={name}>
+    <Container>
+      <Label errorMs={error} htmlFor={name}>
         {label}
-      </label>
-      <input
-        className={error ? "error input" : "input"}
+      </Label>
+      <Inputs
+        // className={error ? " error   " : ""}
         name={name}
         type={type}
         id={name}
@@ -16,12 +16,8 @@ function Input(props) {
         onChange={handleChange}
         placeholder={placeholder}
       />
-      {error && (
-        <div htmlFor={name} className="lable-error">
-          {error}
-        </div>
-      )}
-    </div>
+      {/* {error && <Error htmlFor={name}>{error}</Error>} */}
+    </Container>
   );
 }
 

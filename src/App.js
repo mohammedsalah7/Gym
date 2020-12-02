@@ -1,6 +1,7 @@
 import "./App.css";
 import Index from "./Page/Index";
 import Signup from "./Page/Signup";
+import LogIn from "./Page/login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useReducer, createContext } from "react";
 
@@ -61,6 +62,9 @@ function App() {
             </Route>
             <Route exact path="/signup">
               <Signup />
+            </Route>
+            <Route exact path="/login">
+              <LogIn />
             </Route>
           </LoginsContext.Provider>
         </Switch>

@@ -27,7 +27,7 @@ import {
   LinkTap,
   Btn,
 } from "./style";
-import { Button } from "@material-ui/core";
+
 function TabPanel(props) {
   const { children, value, index } = props;
 
@@ -68,7 +68,7 @@ const useStyles = makeStyles(() => ({
     position: "relative",
     top: "20px",
     marginLeft: "80px",
-
+    color: "#212529",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
     borderRadius: "5px ",
     marginBottom: "30px",
@@ -177,55 +177,52 @@ function Gallary() {
       <TabPanel value={value} index={1}>
         <Section>
           <Artical>
-            <ImgTab src={icon2} alt="First Class" />
-            <H4>First Training Class</H4>
+            <ImgTab src={icon2} alt="Second Class" />
+            <H4>Second Training Class</H4>
             <Info>
-              Phasellus convallis mauris sed elementum vulputate. Donec posuere
-              leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed
-              vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia
-              gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
-              accumsan diam.
+              Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac
+              pulvinar quam tortor a velit. Praesent ultrices erat ante, in
+              ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper
+              at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci
+              varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
             </Info>
-
-            <Button variant="contained" color="primary">
-              View Schedule
-            </Button>
+            <LinkTap href="#2">View Schedule</LinkTap>
           </Artical>
         </Section>{" "}
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Section>
           <Artical>
-            <ImgTab src={icon3} alt="First Class" />
-            <H4>First Training Class</H4>
+            <ImgTab src={icon3} alt="Third Class" />
+            <H4>Third Training Class</H4>
             <Info>
-              Phasellus convallis mauris sed elementum vulputate. Donec posuere
-              leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed
-              vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia
-              gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
-              accumsan diam.
+              Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id
+              auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus
+              porta, nisi tortor vulputate sapien, id scelerisque felis magna id
+              felis. Proin neque metus, pellentesque pharetra semper vel,
+              accumsan a neque.
             </Info>
-            <LinkTap href="#1">View Schedule</LinkTap>
+            <LinkTap href="#3">View Schedule</LinkTap>
           </Artical>
         </Section>{" "}
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Section>
-          <Artical id="tabs-1">
-            <ImgTab src={icon4} alt="First Class" />
-            <H4>First Training Class</H4>
+          <Artical>
+            <ImgTab src={icon4} alt="Fourth Class" />
+            <H4>Fourth Training Class</H4>
             <Info>
-              Phasellus convallis mauris sed elementum vulputate. Donec posuere
-              leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed
-              vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia
-              gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
-              accumsan diam.
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Aenean ultrices elementum odio
+              ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum
+              commodo et.
             </Info>
-            <LinkTap href="#1">View Schedule</LinkTap>
+            <LinkTap href="#4">View Schedule</LinkTap>
           </Artical>
         </Section>{" "}
       </TabPanel>
-      <Btn href="#1">View Schedule</Btn>
+      <Btn href="#">View Schedule</Btn>
     </div>
   );
 }

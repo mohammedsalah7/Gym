@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div``;
+
 export const Heading = styled.section``;
 export const H2 = styled.h2`
   position: relative;
@@ -13,6 +14,7 @@ export const H2 = styled.h2`
   margin-top: 0px;
   margin-bottom: 0px;
 `;
+
 export const Span = styled.span`
   font-style: normal;
   color: #232d39;

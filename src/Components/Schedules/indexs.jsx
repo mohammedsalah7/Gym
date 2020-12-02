@@ -54,7 +54,7 @@ const useStyles = makeStyles((e) => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     // opacity: "1",
-    marginTop: "350px",
+    marginTop: "140px",
     // marginBottom: "350px",
     color: "red",
     width: "100%",
@@ -62,19 +62,21 @@ const useStyles = makeStyles((e) => ({
     // position: "re",
     // top: "3000px",
     bottom: "10px",
-    fontFamily: "'Poppins', sans-serif",
+    // fontFamily: "'Poppins', sans-serif",
     // border: "10px solid blue",
   },
   app: {
     backgroundColor: "unset",
     boxShadow: "none",
+    display: "flex",
+    flexWrap: "wrap",
     // border: "0px",
     padding: "0px",
     // border: "1px solid red",
     width: "700px",
     // position: "absolute",
     top: "290px",
-    left: "260px",
+    left: "390px",
 
     // height: "50px",
     // overflow: "visible ",
@@ -90,37 +92,37 @@ const useStyles = makeStyles((e) => ({
   },
   tab: {
     // position: "relative",
-    left: "153px",
+    left: "30px",
     color: "white",
     textTransform: "none",
     // border: "1px solid red",
     padding: "0px",
     margin: "10px",
-    width: "100px",
+    width: "10px",
     height: "10px",
     fontSize: "15px",
     transition: "none",
     backgroundColor: "unset",
 
-    "&:hover": {
-      // color: "blue",
-      transition: "none",
-      backgroundColor: "unset",
-    },
-    "&$tabSelected": {
-      backgroundColor: "unset",
-    },
-    "&:focus": {
-      // color: "red",
-      backgroundColor: "unset",
-      width: "10px",
-    },
+    // "&:hover": {
+    // color: "blue",
+    // transition: "none",
+    // backgroundColor: "unset",
+    // },
+    // "&$tabSelected": {
+    // backgroundColor: "unset",
+    // },
+    // "&:focus": {
+    // color: "red",
+    // backgroundColor: "unset",
+    // width: "10px",
+    // },
   },
-  tabSelected: {},
+  // tabSelected: {},
 
   tab2: {
     position: "relative",
-    left: "55px",
+    // left: "55px",
     color: "white",
     textTransform: "none",
     // border: "1px solid red",
@@ -132,7 +134,7 @@ const useStyles = makeStyles((e) => ({
   },
   tab3: {
     position: "relative",
-    left: "-25px",
+    right: "25px",
     color: "white",
     // border: "1px solid red",
     padding: "0px",
@@ -144,7 +146,7 @@ const useStyles = makeStyles((e) => ({
   },
   tab4: {
     position: "relative",
-    left: "-105px",
+    right: "50px",
     color: "white",
     textTransform: "none",
     // border: "1px solid red",
@@ -156,7 +158,7 @@ const useStyles = makeStyles((e) => ({
   },
   tab5: {
     position: "relative",
-    left: "-215px",
+    right: "90px",
     color: "white",
     textTransform: "none",
     // border: "1px solid red",
@@ -200,6 +202,7 @@ export default function SimpleTabs() {
             textColor="primary"
           >
             <Tab
+              style={{ minHeight: 30, minWidth: 100 }}
               disableTouchRipple={true}
               // wrapped={true}
               className={classes.tab}
@@ -207,24 +210,28 @@ export default function SimpleTabs() {
               {...a11yProps(0)}
             />
             <Tab
+              style={{ minHeight: 30, minWidth: 100 }}
               disableTouchRipple={true}
               className={classes.tab2}
               label={" Tuesday /"}
               {...a11yProps(1)}
             />
             <Tab
+              style={{ minHeight: 30, minWidth: 120 }}
               disableTouchRipple={true}
               className={classes.tab3}
               label={" Wednesday   /"}
               {...a11yProps(2)}
             />
             <Tab
+              style={{ minHeight: 30, minWidth: 100 }}
               disableTouchRipple={true}
               className={classes.tab4}
               label=" Thursday   /"
               {...a11yProps(2)}
             />
             <Tab
+              style={{ minHeight: 30, minWidth: 100 }}
               disableTouchRipple={true}
               className={classes.tab5}
               label={" Friday"}
