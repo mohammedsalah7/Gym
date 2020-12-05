@@ -7,9 +7,10 @@ import {
   LinkNav,
   Span,
   Ancor,
-} from "./style.js";
+} from "./styleNavScroll.js";
+import "../../App.css";
 
-export default function TopNav() {
+export default function NavScroll() {
   return (
     <Container>
       <Nav>
