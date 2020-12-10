@@ -8,7 +8,7 @@ export const themes = createMuiTheme({
       padding: "0",
     },
     secondary: {
-      main: "#ed563b",
+      main: "#0",
       light: "#ed563b",
       padding: "0",
     },

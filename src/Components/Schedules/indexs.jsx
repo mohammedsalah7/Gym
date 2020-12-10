@@ -26,7 +26,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box p={3}>
-          <Typography>{children}</Typography>
+          <Typography component={"span"}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -197,7 +197,7 @@ export default function SimpleTabs() {
             value={value}
             onChange={handleChange}
             aria-label="simple tabs example"
-            indicatorColor="black"
+            indicatorColor="secondary"
             // className={classes.tab}
             textColor="primary"
           >

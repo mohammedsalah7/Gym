@@ -27,9 +27,9 @@ export default function Contact() {
             src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="600px"
-            frameborder="0"
+            frameBorder="0"
             style={{ border: 0 }}
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </ArticleLeft>{" "}
       </Left>
@@ -77,11 +77,10 @@ export default function Contact() {
           Copyright &copy; 2020 Training Studio - Designed by{" "}
           <Link
             rel="nofollow"
-            href="https://templatemo.com"
-            class="tm-text-link"
-            target="_parent"
+            href="https://www.facebook.com/mohamadmsalah7/"
+            target="_blank"
           >
-            TemplateMo
+            Mohammed Salah
           </Link>
         </FooterHeader>
       </Footer>

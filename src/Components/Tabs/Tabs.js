@@ -35,7 +35,7 @@ function TabPanel(props) {
     <div>
       {value === index && (
         <Box p={3}>
-          <Typography>{children}</Typography>
+          <Typography component={"span"}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -102,7 +102,8 @@ function Gallary() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         className={classes.tabs}
-        indicatorColor="black"
+        // indicatorColor="black"
+        indicatorColor="secondary"
         textColor="primary"
         variant="fullWidth"
       >
