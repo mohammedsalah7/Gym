@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 export const Container = styled.div`
   position: relative;
@@ -50,7 +51,7 @@ export const Span = styled.span`
   font-weight: 900;
 `;
 
-export const Link = styled.a`
+export const Links = styled(Link)`
   display: inline-block;
   font-size: 15px;
   padding: 12px 20px;
@@ -60,4 +61,5 @@ export const Link = styled.a`
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 `;

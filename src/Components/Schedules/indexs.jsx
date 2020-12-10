@@ -75,8 +75,9 @@ const useStyles = makeStyles((e) => ({
     // border: "1px solid red",
     width: "700px",
     // position: "absolute",
-    top: "290px",
-    left: "390px",
+    top: "320px",
+    left: "410px",
+    zIndex: "1",
 
     // height: "50px",
     // overflow: "visible ",
@@ -84,8 +85,8 @@ const useStyles = makeStyles((e) => ({
   TabPanel: {
     // border: "1px solid blue",
     // position: "absolute",
-    marginTop: "280px",
-    marginLeft: "320px",
+    marginTop: "320px",
+    marginLeft: "300px",
     // left: "280px",
     // top: "390px",
     // zIndex: "-999",

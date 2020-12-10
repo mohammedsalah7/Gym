@@ -4,7 +4,6 @@ export const Container = styled.div`
   margin-top: 140px;
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px solid red; */
 `;
 export const Left = styled.section`
   width: 50%;

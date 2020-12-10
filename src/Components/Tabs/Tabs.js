@@ -55,6 +55,7 @@ const useStyles = makeStyles(() => ({
     height: 604,
     position: "relative",
     top: "239px",
+    // border: "1px solid red",
   },
   tabs: {
     position: "absolute",

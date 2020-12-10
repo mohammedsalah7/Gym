@@ -3,10 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
-  /* margin-right: auto;
-  margin-left: auto; */
 `;
 
 export const Heading = styled.section`
@@ -16,7 +12,6 @@ export const Heading = styled.section`
   margin-bottom: 80px;
   margin-left: 350px;
   position: absolute;
-  /* border: 1px solid red; */
 `;
 export const H2 = styled.h2`
   position: relative;
@@ -58,36 +53,26 @@ export const Items = styled.ul`
   color: #ed563b;
 `;
 export const List = styled.li`
-  /* margin-bottom: 50px; */
   width: 100%;
   list-style: none;
-  /* border: 1px solid red; */
 `;
 export const Link = styled.a`
   width: 300px;
   position: relative;
   left: 60px;
-  /* padding: 20px; */
   display: flex;
   background-color: #fff;
-  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
-  /* border-radius: 5px; */
   font-size: 19px;
   margin-bottom: 3px;
-  /* color: #232d39; */
   letter-spacing: 0.5px;
   font-weight: 600;
-  /* transition: all 0.3s; */
   text-decoration: none;
-  /* border: 1px solid red; */
 `;
 export const ImageLink = styled.img`
   position: absolute;
   max-width: 100%;
   margin-right: 250px;
   margin-left: 2px;
-
-  /* border: 1px solid red; */
 `;
 export const Btn = styled.a`
   text-align: center;
@@ -109,14 +94,12 @@ export const Section = styled.section`
   margin-left: 450px;
   margin-bottom: 450px;
   position: absolute;
-  /* top: -80px; */
 `;
 export const Artical = styled.article`
   margin-top: 126px;
-  margin-left: 60px;
+  margin-left: 30px;
   width: 700px;
   height: 548.35px;
-  /* border: 1px solid red; */
 `;
 export const ImgTab = styled.img`
   max-width: 100%;

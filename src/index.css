@@ -32,4 +32,10 @@ body {
     background: #ed563b;
     color: #fff;
   }
-  
+   .map{
+     height: 700px;
+     /* margin: auto; */
+     overflow: hidden;
+     z-index: 1;
+
+   }
