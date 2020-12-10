@@ -4,6 +4,7 @@ import banner from "../../images/cta-bg.jpg";
 export const Container = styled.div`
   position: relative;
   width: 100%;
+  overflow: hidden;
 `;
 
 export const Heading = styled.section`
@@ -43,7 +44,7 @@ export const Span = styled.span`
 `;
 export const Section = styled.section`
   margin-left: 50px;
-  width: 1252px;
+  /* width: 1252px; */
   font-style: normal;
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +59,7 @@ export const Left = styled.section`
 `;
 export const Right = styled.section`
   font-style: normal;
-  width: 610px;
+  width: 590px;
   margin-right: 0;
   overflow: hidden;
 `;

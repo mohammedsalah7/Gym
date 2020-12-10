@@ -2,15 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  /* /* width: 100%; */
-  /* padding-right: 15px;
-  padding-left: 15px; */
-  /* /* margin-right: auto; */
-  margin-left: 412px;
+  margin-left: 400px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 80px;
-  /* border: 1px solid red; */
 `;
 
 export const Heading = styled.section`
@@ -33,7 +28,6 @@ export const H2 = styled.h2`
   margin-bottom: 0px;
 `;
 export const Parghraph = styled.p`
-  /* margin-left: 400px; */
   font-size: 14px;
   line-height: 25px;
   color: #fff;
@@ -63,36 +57,27 @@ export const Items = styled.ul`
   color: #ed563b;
 `;
 export const List = styled.li`
-  /* margin-bottom: 50px; */
   width: 100%;
   list-style: none;
-  /* border: 1px solid red; */
 `;
 export const Link = styled.a`
   width: 300px;
   position: relative;
   left: 80px;
-  /* padding: 20px; */
   display: flex;
   background-color: #fff;
-  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
-  /* border-radius: 5px; */
   font-size: 15px;
   margin-bottom: 3px;
-  /* color: #232d39; */
   letter-spacing: 0.5px;
   font-weight: 600;
   transition: all 0.3s;
   text-decoration: none;
-  /* border: 1px solid red; */
 `;
 export const ImageLink = styled.img`
   position: absolute;
   max-width: 100%;
   margin-right: 225px;
   margin-left: 22px;
-
-  /* border: 1px solid red; */
 `;
 export const Btn = styled.a`
   text-align: center;
@@ -113,10 +98,7 @@ export const Section = styled.section`
   margin-bottom: 450px;
   position: absolute;
   top: -80px;
-  /* position: absolute;
-  text-align: left;
-  display: inline-block;
-  /* transition: all 0.3s; */
+
   border: 1px solid red;
 `;
 export const Artical = styled.article`

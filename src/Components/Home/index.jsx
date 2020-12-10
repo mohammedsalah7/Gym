@@ -1,6 +1,6 @@
 import React from "react";
 import gym from "../../images/gym-video.mp4";
-import { Container, Link, Section, H6, H2, Span, Caption } from "./style.js";
+import { Container, Links, Section, H6, H2, Span, Caption } from "./style.js";
 
 export default function Bxs() {
   return (
@@ -14,7 +14,7 @@ export default function Bxs() {
           <H2>
             easy with our <Span>gym</Span>
           </H2>
-          <Link>Become a member</Link>
+          <Links to="/signup">Become a member</Links>
         </Caption>
       </Section>
     </Container>

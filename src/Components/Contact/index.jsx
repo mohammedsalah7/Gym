@@ -15,22 +15,29 @@ import {
   FooterHeader,
   Link,
 } from "./style";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 export default function Contact() {
   return (
     <Container id="contact">
       <Left>
         {" "}
         <ArticleLeft>
-          {" "}
-          <iframe
-            title="map"
-            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="600px"
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen
-          ></iframe>
+          <MapContainer
+            center={[31.535243, 34.4752707, 15]}
+            zoom={13}
+            scrollWheelZoom={false}
+            className="map"
+          >
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[31.535243, 34.4752707, 15]}>
+              <Popup>
+                A pretty CSS3 popup. <br /> Easily customizable.
+              </Popup>
+            </Marker>
+          </MapContainer>
         </ArticleLeft>{" "}
       </Left>
       <Right>
