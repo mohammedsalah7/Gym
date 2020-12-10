@@ -23,6 +23,7 @@ import {
   Head2,
   Span2,
   BtnLink,
+  SubLink,
 } from "./style.js";
 export default function About() {
   return (
@@ -73,8 +74,11 @@ export default function About() {
               <Part>
                 <H4>Basic Muscle Course</H4>
                 <Info>
-                  Credit goes to Pexels website for images and video background
-                  used in this HTML template.
+                  Credit goes to{" "}
+                  <SubLink href="https://www.pexels.com/" target="_blank">
+                    Pexels website{" "}
+                  </SubLink>{" "}
+                  for images and video background used in this HTML template.
                 </Info>
                 <Link href="#s">Discover More</Link>
               </Part>
@@ -90,7 +94,15 @@ export default function About() {
               <Part>
                 <H4>Advanced Muscle Course</H4>
                 <Info>
-                  You may want to browse through Digital Marketing or Corporate
+                  You may want to browse through{" "}
+                  <SubLink href="https://templatemo.com/tag/digital-marketing">
+                    {" "}
+                    Digital Marketing{" "}
+                  </SubLink>
+                  or{" "}
+                  <SubLink href="https://templatemo.com/tag/corporate">
+                    Corporate{" "}
+                  </SubLink>
                   HTML CSS templates on our website.
                 </Info>
                 <Link href="#s">Discover More</Link>

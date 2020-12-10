@@ -5,7 +5,7 @@ import { Container, Link, Section, H6, H2, Span, Caption } from "./style.js";
 export default function Bxs() {
   return (
     <Container>
-      <video autoplay="autoplay" muted loop="loop" id="bg-video">
+      <video autoPlay="autoplay" muted loop="loop" id="bg-video">
         <source src={gym} type="video/mp4" />
       </video>
       <Section>

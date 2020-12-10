@@ -37,12 +37,12 @@ export const Btn = styled.button`
   background-color: #ed563b;
   color: #fff;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
-  transition: all 0.3s;
   border: none;
   outline: none;
   margin-top: -8px;
+  cursor: pointer;
 `;
 export const Input = styled.input`
   color: #7a7a7a;
@@ -123,6 +123,7 @@ export const FooterHeader = styled.p`
 export const Link = styled.a`
   cursor: pointer;
   color: #ed563b;
+  text-decoration: none;
   &:hover {
     color: #ed563b;
   }

@@ -4,11 +4,6 @@ import banner from "../../images/cta-bg.jpg";
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; */
-  /* border: 1px solid red; */
 `;
 
 export const Heading = styled.section`
@@ -38,8 +33,6 @@ export const Parghraph = styled.p`
 `;
 export const Image = styled.img`
   position: relative;
-  /* padding: 20px; */
-  /* width: 100px; */
   margin: 20px auto;
   vertical-align: middle;
   text-align: center;
@@ -121,8 +114,6 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  /* width: 1349px; */
-  /* margin-left: -15px; */
 `;
 export const P = styled.p`
   font-size: 16px;
@@ -152,4 +143,10 @@ export const BtnLink = styled.a`
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+`;
+
+export const SubLink = styled.a`
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
 `;
