@@ -103,7 +103,6 @@ function Gallary() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         className={classes.tabs}
-        // indicatorColor="black"
         indicatorColor="secondary"
         textColor="primary"
         variant="fullWidth"
@@ -224,7 +223,7 @@ function Gallary() {
           </Artical>
         </Section>{" "}
       </TabPanel>
-      <Btn href="#">View Schedule</Btn>
+      <Btn href="#6">View Schedule</Btn>
     </div>
   );
 }

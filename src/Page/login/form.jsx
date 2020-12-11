@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Input from "../../Components/Input";
-import { Form, Container, H2, Span } from "./style";
+import { Form, Container, H2, Span, Title } from "./style";
 import { RegisterBtn, LogInBtn } from "../../Components/Button";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
@@ -16,7 +16,6 @@ const schema = yup.object().shape({
 });
 
 function Forms() {
-  // const { dispatch } = useContext(LoginsContext);
   const history = useHistory();
   const [state, setState] = useState(initState);
   const [errors, setErrors] = useState(initState);
@@ -88,6 +87,7 @@ function Forms() {
         </H2>
       </Container>
       <Form className="contanier-form" onSubmit={handleSubmit}>
+        <Title>Login Page</Title>
         <Input
           handleChange={handleChange}
           id="email"
@@ -111,13 +111,13 @@ function Forms() {
         />
         {/* {error && <span>{error}</span>} */}
 
-        <Link to="/" className="link-page">
-          <RegisterBtn className="register-btn-signup">Register</RegisterBtn>
-        </Link>
-        <LogInBtn type=" submit" className="login-btn-signup">
+        <LogInBtn type=" submit" className="login-btn-login">
           {" "}
           Log In
         </LogInBtn>
+        <Link to="/signup" className="link-page">
+          <RegisterBtn className="register-btn-login">Register</RegisterBtn>
+        </Link>
       </Form>
     </div>
   );

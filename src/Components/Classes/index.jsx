@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "./style1";
+import { Container } from "./style";
 import Gallary from "../Tabs/Tabs";
 export default function Classes() {
   return (

@@ -14,7 +14,6 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.nav`
-  /* position: sticky; */
   width: 1140px;
   display: flex;
   justify-content: space-between;
@@ -47,7 +46,6 @@ export const All = styled.ul`
   flex-wrap: wrap;
   margin-top: 20px;
   &:first-child {
-    /* color: black; */
   }
 `;
 export const Items = styled.li`
@@ -57,7 +55,6 @@ export const Items = styled.li`
   padding-right: 20px;
   .active {
     color: #ed563b;
-    /* background-color: red; */
   }
 
   &:last-child a {

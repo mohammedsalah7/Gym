@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import TopNav from "../../Components/Navbar";
 import NavScroll from "../../Components/Navbar/navScroll";
-
-import Bxs from "../../Components/Home/index";
+import Home from "../../Components/Home/index";
 import About from "../../Components/About";
 import { ThemeProvider } from "@material-ui/core";
-import { theme } from "../../Components/Tabs/Theme";
-import { themes } from "../../Components/Schedules/Themes";
+import { themeTab } from "../../Components/Tabs/Theme";
+import { themeTabel } from "../../Components/Schedules/Themes";
 import Classes from "../../Components/Classes/index";
 import Export from "../../Components/expert";
-
-import SimpleTabs from "../../Components/Schedules/indexs";
+import Schedules from "../../Components/Schedules/indexs";
 import Contact from "../../Components/Contact";
 
 export default function Index() {
@@ -31,14 +29,14 @@ export default function Index() {
   return (
     <div>
       <TopNav />
-      <Bxs />
+      <Home />
       {scrolled && <NavScroll />}
       <About />
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeTab}>
         <Classes />
       </ThemeProvider>
-      <ThemeProvider theme={themes}>
-        <SimpleTabs />
+      <ThemeProvider theme={themeTabel}>
+        <Schedules />
       </ThemeProvider>
       <Export />
       <Contact />

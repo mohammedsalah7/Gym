@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useContext } from "react";
 import Input from "../../Components/Input";
 import { LoginsContext } from "../../App";
-import { Form, Container, H2, Span } from "./style";
+import { Form, Container, H2, Span, Title } from "./style";
 import { RegisterBtn, LogInBtn } from "../../Components/Button";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
 import * as yup from "yup";
-// import "./style.css";
 const initState = {
   email: "",
   userName: "",
@@ -69,10 +68,6 @@ function Forms() {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    // let _value = value;
-    // if (id === "checked") {
-    //   _value = checked;
-    // }
     setState({ ...state, [id]: value });
   };
 
@@ -109,6 +104,8 @@ function Forms() {
         </H2>
       </Container>
       <Form className="contanier-form" onSubmit={handleSubmit}>
+        <Title>SignUp Page</Title>
+
         <Input
           handleChange={handleChange}
           id="email"

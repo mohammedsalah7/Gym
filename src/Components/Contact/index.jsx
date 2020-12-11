@@ -1,4 +1,5 @@
 import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import {
   Container,
   Left,
@@ -15,7 +16,6 @@ import {
   FooterHeader,
   Link,
 } from "./style";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 export default function Contact() {
   return (
     <Container id="contact">
@@ -58,7 +58,6 @@ export default function Contact() {
               id="email"
               pattern="[^ @]*@[^ @]*"
               placeholder="Your Email*"
-              required=""
             />
 
             <Input
@@ -70,10 +69,8 @@ export default function Contact() {
 
             <TextArea
               name="message"
-              rows="6"
               id="message"
               placeholder="Message"
-              required=""
             ></TextArea>
             <Btn type="submit">Send Message</Btn>
           </Form>

@@ -1,5 +1,3 @@
-import "./style.js";
-
 export const RegisterBtn = (props) => {
   const { children, className, type } = props;
   return (

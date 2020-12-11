@@ -20,14 +20,12 @@ export const Right = styled.section`
 
 export const ArticleLeft = styled.article``;
 export const ArticleRight = styled.article`
-  /* padding: 40px; */
   border-radius: 5px;
 `;
 export const Form = styled.form`
   background-color: #fff;
   padding: 40px;
   border-radius: 5px;
-  /* border: 1px solid red; */
 `;
 export const Btn = styled.button`
   display: inline-block;
@@ -53,9 +51,6 @@ export const Input = styled.input`
   outline: none;
   line-height: 40px;
   padding: 0px 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   margin-bottom: 30px;
 `;
 export const InputName = styled.input`
@@ -68,9 +63,6 @@ export const InputName = styled.input`
   outline: none;
   line-height: 40px;
   padding: 0px 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   margin-bottom: 30px;
   margin-right: 12px;
 `;
@@ -84,9 +76,6 @@ export const InputEmail = styled.input`
   outline: none;
   line-height: 40px;
   padding: 0px 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   margin-bottom: 30px;
   margin-left: 13px;
 `;
@@ -102,9 +91,6 @@ export const TextArea = styled.textarea`
   outline: none;
   line-height: 40px;
   padding: 0px 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   margin-bottom: 30px;
 `;
 
@@ -112,7 +98,6 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   padding: 30px 0px;
-  /* border: 1px solid red; */
   width: 100%;
 `;
 export const FooterHeader = styled.p`

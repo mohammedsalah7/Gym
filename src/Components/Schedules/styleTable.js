@@ -5,11 +5,9 @@ export const Table = styled.table`
   position: relative;
   right: 80px;
   text-align: center;
-  /* border: 1px solid rgb(230, 13, 13); */
   border-collapse: collapse;
   border: 1px solid #fff;
   border-collapse: collapse;
-  /* width: 1650px; */
   height: 100px;
   color: rgb(199, 16, 16);
   font-size: 13px;
