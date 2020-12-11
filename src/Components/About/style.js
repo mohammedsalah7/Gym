@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import banner from "../../images/cta-bg.jpg";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   position: relative;
@@ -44,7 +45,6 @@ export const Span = styled.span`
 `;
 export const Section = styled.section`
   margin-left: 50px;
-  /* width: 1252px; */
   font-style: normal;
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +97,7 @@ export const H4 = styled.h4`
   font-weight: 600;
   text-transform: capitalize;
 `;
-export const Link = styled.a`
+export const Ancor = styled.a`
   margin-top: 7px;
   display: inline-block;
   font-size: 13px;
@@ -116,25 +116,25 @@ export const Banner = styled.div`
   background-size: cover;
   text-align: center;
 `;
-export const P = styled.p`
+export const InfoBanner = styled.p`
   font-size: 16px;
   color: #fff;
   margin: 15px 0px 25px 185px;
   width: 940px;
   text-align: center;
 `;
-export const Head2 = styled.h2`
+export const HeadBanner = styled.h2`
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
 `;
-export const Span2 = styled.span`
+export const SpanBanner = styled.span`
   font-style: normal;
   color: #ed563b;
 `;
-export const BtnLink = styled.a`
+export const BtnLinkBanner = styled(Link)`
   display: inline-block;
   font-size: 15px;
   padding: 12px 20px;

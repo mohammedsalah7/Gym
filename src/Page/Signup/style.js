@@ -18,11 +18,17 @@ export const Span = styled.span`
   color: #232d39;
 `;
 export const Form = styled.form`
-  /* border: 1px solid red; */
   background-color: #232d39;
   height: 500px;
   position: absolute;
   width: 750px;
   left: 27%;
   border-radius: 15px;
+`;
+export const Title = styled.p`
+  color: #ed563b;
+  font-size: 26px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 10px;
 `;

@@ -8,7 +8,6 @@ function Input(props) {
         {label}
       </Label>
       <Inputs
-        // className={error ? " error   " : ""}
         name={name}
         type={type}
         id={name}
@@ -16,7 +15,6 @@ function Input(props) {
         onChange={handleChange}
         placeholder={placeholder}
       />
-      {/* {error && <Error htmlFor={name}>{error}</Error>} */}
     </Container>
   );
 }

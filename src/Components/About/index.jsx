@@ -1,154 +1,132 @@
 import React from "react";
 import waves from "../../images/line-dec.png";
 import incon from "../../images/features-first-icon.png";
-import {
-  Container,
-  Heading,
-  H2,
-  Image,
-  Parghraph,
-  Span,
-  Section,
-  Left,
-  Icon,
-  Right,
-  Part,
-  Items,
-  List,
-  Info,
-  H4,
-  Link,
-  Banner,
-  P,
-  Head2,
-  Span2,
-  BtnLink,
-  SubLink,
-} from "./style.js";
+import * as A from "./style.js";
 export default function About() {
   return (
-    <Container id="about">
-      <Heading>
-        <H2>
-          Choose <Span>Program</Span>
-        </H2>
-        <Image src={waves} alt="waves" />
-        <Parghraph>
+    <A.Container id="about">
+      <A.Heading>
+        <A.H2>
+          Choose <A.Span>Program</A.Span>
+        </A.H2>
+        <A.Image src={waves} alt="waves" />
+        <A.Parghraph>
           Training Studio is free CSS template for gyms and fitness centers. You
           are allowed to use this layout for your business website.
-        </Parghraph>
-      </Heading>
-      <Section>
-        <Left>
-          <Items>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>Basic Fitness</H4>
-                <Info>
+        </A.Parghraph>
+      </A.Heading>
+      <A.Section>
+        <A.Left>
+          <A.Items>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>Basic Fitness</A.H4>
+                <A.Info>
                   Please do not re-distribute this template ZIP file on any
                   template collection website. This is not allowed.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>New Gym Training</H4>
-                <Info>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>New Gym Training</A.H4>
+                <A.Info>
                   If you wish to support TemplateMo website via PayPal, please
                   feel free to contact us. We appreciate it a lot.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>Basic Muscle Course</H4>
-                <Info>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>Basic Muscle Course</A.H4>
+                <A.Info>
                   Credit goes to{" "}
-                  <SubLink href="https://www.pexels.com/" target="_blank">
+                  <A.SubLink href="https://www.pexels.com/" target="_blank">
                     Pexels website{" "}
-                  </SubLink>{" "}
+                  </A.SubLink>{" "}
                   for images and video background used in this HTML template.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-          </Items>
-        </Left>
-        <Right>
-          <Items>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>Advanced Muscle Course</H4>
-                <Info>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+          </A.Items>
+        </A.Left>
+        <A.Right>
+          <A.Items>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>Advanced Muscle Course</A.H4>
+                <A.Info>
                   You may want to browse through{" "}
-                  <SubLink href="https://templatemo.com/tag/digital-marketing">
+                  <A.SubLink href="https://templatemo.com/tag/digital-marketing">
                     {" "}
                     Digital Marketing{" "}
-                  </SubLink>
+                  </A.SubLink>
                   or{" "}
-                  <SubLink href="https://templatemo.com/tag/corporate">
+                  <A.SubLink href="https://templatemo.com/tag/corporate">
                     Corporate{" "}
-                  </SubLink>
+                  </A.SubLink>
                   HTML CSS templates on our website.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>Yoga Training</H4>
-                <Info>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>Yoga Training</A.H4>
+                <A.Info>
                   This template is built on Bootstrap v4.3.1 framework. It is
                   easy to adapt the columns and sections.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-            <List>
-              <Part>
-                <Icon src={incon} alt="First One" />
-              </Part>
-              <Part>
-                <H4>Body Building Course</H4>
-                <Info>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+            <A.List>
+              <A.Part>
+                <A.Icon src={incon} alt="First One" />
+              </A.Part>
+              <A.Part>
+                <A.H4>Body Building Course</A.H4>
+                <A.Info>
                   Suspendisse fringilla et nisi et mattis. Curabitur sed finibus
                   nisi. Integer nibh sapien, vehicula et auctor.
-                </Info>
-                <Link href="#s">Discover More</Link>
-              </Part>
-            </List>
-          </Items>
-        </Right>
-      </Section>
-      <Banner>
-        <Head2>
-          Don’t <Span2>think</Span2>, begin <Span2>today</Span2>!
-        </Head2>
-        <P>
+                </A.Info>
+                <A.Ancor href="#s">Discover More</A.Ancor>
+              </A.Part>
+            </A.List>
+          </A.Items>
+        </A.Right>
+      </A.Section>
+      <A.Banner>
+        <A.HeadBanner>
+          Don’t <A.SpanBanner>think</A.SpanBanner>, begin{" "}
+          <A.SpanBanner>today</A.SpanBanner>!
+        </A.HeadBanner>
+        <A.InfoBanner>
           Ut consectetur, metus sit amet aliquet placerat, enim est ultricies
           ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a
           nisi luctus imperdiet.
-        </P>
+        </A.InfoBanner>
 
-        <BtnLink href="#our-classes">Become a member</BtnLink>
-      </Banner>
-    </Container>
+        <A.BtnLinkBanner to="/signup">Become a member</A.BtnLinkBanner>
+      </A.Banner>
+    </A.Container>
   );
 }

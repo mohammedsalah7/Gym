@@ -1,45 +1,35 @@
-import {
-  Container,
-  Nav,
-  Logo,
-  All,
-  Items,
-  LinkNav,
-  Span,
-  Ancor,
-} from "./styleNavScroll.js";
-import "../../App.css";
+import * as NS from "./styleNavScroll.js";
 
 export default function NavScroll() {
   return (
-    <Container>
-      <Nav>
-        <Logo>
-          Training<Span> Studio</Span>
-        </Logo>
-        <All>
-          <Items>
-            <LinkNav exact to="/">
+    <NS.Container>
+      <NS.Nav>
+        <NS.Logo>
+          Training<NS.Span> Studio</NS.Span>
+        </NS.Logo>
+        <NS.All>
+          <NS.Items>
+            <NS.LinkNav exact to="/">
               Home
-            </LinkNav>
-          </Items>
-          <Items>
-            <Ancor href="#about">About</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#classes">Classes</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#schedules">Schedules</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#contact">Contact</Ancor>
-          </Items>
-          <Items>
-            <LinkNav to="/signup">Sign Up</LinkNav>
-          </Items>
-        </All>
-      </Nav>
-    </Container>
+            </NS.LinkNav>
+          </NS.Items>
+          <NS.Items>
+            <NS.Ancor href="#about">About</NS.Ancor>
+          </NS.Items>
+          <NS.Items>
+            <NS.Ancor href="#classes">Classes</NS.Ancor>
+          </NS.Items>
+          <NS.Items>
+            <NS.Ancor href="#schedules">Schedules</NS.Ancor>
+          </NS.Items>
+          <NS.Items>
+            <NS.Ancor href="#contact">Contact</NS.Ancor>
+          </NS.Items>
+          <NS.Items>
+            <NS.LinkNav to="/signup">Sign Up</NS.LinkNav>
+          </NS.Items>
+        </NS.All>
+      </NS.Nav>
+    </NS.Container>
   );
 }

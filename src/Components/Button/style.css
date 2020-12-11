@@ -8,7 +8,6 @@
     border-radius: 6px;
     margin-top: 70px;
     margin-left:20px ;
-    /* font-family: "Inter"; */
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -23,8 +22,36 @@
     border-radius: 6px;
     margin-top: -50px;
     margin-left:170px ;
-    /* padding: 100px; */
-    /* font-family: "Inter"; */
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+
+
+  }
+  .login-btn-login{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    color: #ffffff;
+    background: #ed563b;
+    border-radius: 6px;
+    margin-top: 70px;
+    margin-left:170px ;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .register-btn-login {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    color: #ffffff;
+    background: #ed563b;
+    border-radius: 6px;
+    margin-top: -50px;
+    margin-left:15px ;
     font-weight: 500;
     border: none;
     cursor: pointer;

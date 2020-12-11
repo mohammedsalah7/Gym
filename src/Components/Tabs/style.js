@@ -89,6 +89,7 @@ export const Btn = styled.a`
   text-decoration: none;
   margin-top: 640px;
   margin-left: 30px;
+  cursor: pointer;
 `;
 export const Section = styled.section`
   margin-left: 450px;
@@ -129,7 +130,6 @@ export const LinkTap = styled.a`
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
-  transition: all 0.3s;
   text-decoration: none;
-  /* cursor: pointer; */
+  cursor: pointer;
 `;

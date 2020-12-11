@@ -3,25 +3,18 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  /* border: 1px solid red; */
   position: relative;
   margin-top: 10px;
   width: 750px;
   top: 60px;
   left: 50px;
   height: 60px;
-  /* .error {
-    border-color: red;
-    /* background-color: red; */
-  /* } */
 `;
 
 export const Inputs = styled.input`
   position: relative;
   width: 426px;
   height: 40px;
-  /* left: 793px; */
-  /* top: 360px; */
   border: 1px solid #8692a6;
   box-sizing: border-box;
   border-radius: 6px;
@@ -45,17 +38,14 @@ export const Label = styled.label`
     display: block;
     position: absolute;
     bottom: 5px;
-    /* top: -1px; */
     left: 120px;
     width: 250px;
     height: 20px;
     color: red;
-    /* background-color: blue; */
   }
 `;
 
 export const Error = styled.div`
-  /* border: 1px solid yellow; */
   width: 220px;
   height: 20px;
   position: relative;

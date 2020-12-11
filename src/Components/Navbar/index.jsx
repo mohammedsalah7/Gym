@@ -1,44 +1,35 @@
-import {
-  Container,
-  Nav,
-  Logo,
-  All,
-  Items,
-  LinkNav,
-  Span,
-  Ancor,
-} from "./style.js";
+import * as N from "./style.js";
 
 export default function TopNav() {
   return (
-    <Container>
-      <Nav>
-        <Logo>
-          Training<Span> Studio</Span>
-        </Logo>
-        <All>
-          <Items>
-            <LinkNav exact to="/">
+    <N.Container>
+      <N.Nav>
+        <N.Logo>
+          Training<N.Span> Studio</N.Span>
+        </N.Logo>
+        <N.All>
+          <N.Items>
+            <N.LinkNav exact to="/">
               Home
-            </LinkNav>
-          </Items>
-          <Items>
-            <Ancor href="#about">About</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#classes">Classes</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#schedules">Schedules</Ancor>
-          </Items>
-          <Items>
-            <Ancor href="#contact">Contact</Ancor>
-          </Items>
-          <Items>
-            <LinkNav to="/signup">Sign Up</LinkNav>
-          </Items>
-        </All>
-      </Nav>
-    </Container>
+            </N.LinkNav>
+          </N.Items>
+          <N.Items>
+            <N.Ancor href="#about">About</N.Ancor>
+          </N.Items>
+          <N.Items>
+            <N.Ancor href="#classes">Classes</N.Ancor>
+          </N.Items>
+          <N.Items>
+            <N.Ancor href="#schedules">Schedules</N.Ancor>
+          </N.Items>
+          <N.Items>
+            <N.Ancor href="#contact">Contact</N.Ancor>
+          </N.Items>
+          <N.Items>
+            <N.LinkNav to="/signup">Sign Up</N.LinkNav>
+          </N.Items>
+        </N.All>
+      </N.Nav>
+    </N.Container>
   );
 }
