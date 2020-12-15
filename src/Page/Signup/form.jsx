@@ -103,7 +103,13 @@ function Forms() {
           Training <Span>Studio</Span>
         </H2>
       </Container>
-      <Form className="contanier-form" onSubmit={handleSubmit}>
+      <Form
+        className="contanier-form"
+        onSubmit={handleSubmit}
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
         <Title>SignUp Page</Title>
 
         <Input
