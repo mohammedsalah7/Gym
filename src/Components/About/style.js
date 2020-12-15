@@ -92,6 +92,7 @@ export const H4 = styled.h4`
   margin-top: 0px;
   margin-bottom: 7px;
   letter-spacing: 0.25px;
+  -webkit-letter-spacing: 0.25px;
   color: #232d39;
   font-size: 19px;
   font-weight: 600;

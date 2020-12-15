@@ -31,10 +31,6 @@ export const Logo = styled.a`
   text-transform: uppercase;
   float: left;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 `;
 export const Span = styled.span`
   font-style: normal;
