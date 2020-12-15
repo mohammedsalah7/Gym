@@ -111,6 +111,7 @@ function Forms() {
         data-netlify="true"
       >
         <Title>SignUp Page</Title>
+        <input type="hidden" name="form-name" value="contact" />
 
         <Input
           handleChange={handleChange}
