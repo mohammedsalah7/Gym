@@ -43,7 +43,7 @@ export default function Contact() {
       <Right>
         {" "}
         <ArticleRight>
-          <Form method="post">
+          <Form>
             <InputName
               name="name"
               type="text"
