@@ -25,7 +25,7 @@ import {
   Info,
   ImgTab,
   LinkTap,
-  Btn,
+  BtnTab,
 } from "./style";
 
 function TabPanel(props) {
@@ -55,14 +55,11 @@ const useStyles = makeStyles(() => ({
     height: 604,
     position: "relative",
     top: "239px",
-    // border: "1px solid red",
   },
   tabs: {
     position: "absolute",
     top: "126px",
-    bottom: "100px",
     width: "600px",
-    height: "700px",
   },
 
   tab: {
@@ -223,7 +220,7 @@ function Gallary() {
           </Artical>
         </Section>{" "}
       </TabPanel>
-      <Btn href="#6">View Schedule</Btn>
+      <BtnTab href="#6">View Schedule</BtnTab>
     </div>
   );
 }
