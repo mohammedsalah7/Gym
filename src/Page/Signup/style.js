@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.div``;
 export const Heading = styled.section``;
@@ -38,4 +39,16 @@ export const Error = styled.span`
   position: relative;
   top: 35px;
   right: 250px;
+`;
+export const Refresh = styled.button`
+  position: absolute;
+  margin: 120px 1050px;
+  z-index: 999;
+  border: none;
+  background-color: #232d39;
+`;
+
+export const Icon = styled(FontAwesomeIcon)`
+  color: #ed563b;
+  font-size: 22px;
 `;
