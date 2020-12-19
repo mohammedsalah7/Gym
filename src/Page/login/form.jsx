@@ -90,7 +90,7 @@ function Forms() {
         className="contanier-form"
         onSubmit={handleSubmit}
         name="contact"
-        method="POST"
+        method="post"
         data-netlify="true"
       >
         <Title>Login Page</Title>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Input from "../../Components/Input";
 import { LoginsContext } from "../../App";
-import { Form, Container, H2, Span, Title } from "./style";
+import { Form, Container, H2, Span, Error, Title } from "./style";
 import { RegisterBtn, LogInBtn } from "../../Components/Button";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
@@ -107,7 +107,7 @@ function Forms() {
         className="contanier-form"
         onSubmit={handleSubmit}
         name="contact"
-        method="POST"
+        method="post"
         data-netlify="true"
       >
         <Title>SignUp Page</Title>
@@ -169,6 +169,7 @@ function Forms() {
         <Link to="/login" className="link-page">
           <LogInBtn className="login-btn-signup"> Log In</LogInBtn>
         </Link>
+        {error && <Error>{error}</Error>}
       </Form>
     </div>
   );
