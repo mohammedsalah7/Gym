@@ -24,6 +24,7 @@ export const Form = styled.form`
   width: 750px;
   left: 27%;
   border-radius: 15px;
+  top: 100px;
 `;
 export const Title = styled.p`
   color: #ed563b;
