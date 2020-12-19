@@ -74,7 +74,7 @@ export const ImageLink = styled.img`
   margin-right: 250px;
   margin-left: 2px;
 `;
-export const Btn = styled.a`
+export const BtnTab = styled.a`
   text-align: center;
   padding: 20px 30px;
   width: 350px;
