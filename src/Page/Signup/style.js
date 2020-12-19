@@ -32,3 +32,9 @@ export const Title = styled.p`
   margin-left: 50px;
   margin-top: 10px;
 `;
+export const Error = styled.span`
+  color: red;
+  position: relative;
+  top: 35px;
+  right: 250px;
+`;
