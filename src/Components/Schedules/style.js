@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  margin-left: 400px;
   text-align: center;
-  margin-top: 130px;
-  margin-bottom: 80px;
+  margin: 130px auto auto 400px;
 `;
 
 export const H2 = styled.h2`

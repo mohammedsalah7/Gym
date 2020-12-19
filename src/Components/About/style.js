@@ -11,9 +11,7 @@ export const Container = styled.div`
 export const Heading = styled.section`
   width: 620px;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  margin-left: 350px;
+  margin: 100px auto;
 `;
 export const H2 = styled.h2`
   position: relative;
@@ -120,7 +118,7 @@ export const Banner = styled.div`
 export const InfoBanner = styled.p`
   font-size: 16px;
   color: #fff;
-  margin: 15px 0px 25px 185px;
+  margin: 15px auto;
   width: 940px;
   text-align: center;
 `;

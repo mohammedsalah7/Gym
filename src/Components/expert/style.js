@@ -14,9 +14,7 @@ export const Container = styled.div`
 export const Heading = styled.section`
   width: 620px;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  margin-left: 350px;
+  margin: 100px auto;
 `;
 export const H2 = styled.h2`
   position: relative;
