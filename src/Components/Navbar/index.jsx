@@ -9,9 +9,7 @@ export default function TopNav() {
         </N.Logo>
         <N.All>
           <N.Items>
-            <N.LinkNav exact to="/">
-              Home
-            </N.LinkNav>
+            <N.Ancor href="#home">Home</N.Ancor>
           </N.Items>
           <N.Items>
             <N.Ancor href="#about">About</N.Ancor>

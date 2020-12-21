@@ -49,10 +49,9 @@ export const Items = styled.li`
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
-  .active {
+  &:first-child a {
     color: #ed563b;
   }
-
   &:last-child a {
     display: inline-block;
     font-size: 13px;
