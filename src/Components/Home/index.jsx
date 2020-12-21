@@ -4,7 +4,7 @@ import { Container, Links, Section, H6, H2, Span, Caption } from "./style.js";
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <video autoPlay="autoplay" muted loop="loop" id="bg-video">
         <source src={gym} type="video/mp4" />
       </video>

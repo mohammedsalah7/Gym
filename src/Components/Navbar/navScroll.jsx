@@ -9,9 +9,7 @@ export default function NavScroll() {
         </NS.Logo>
         <NS.All>
           <NS.Items>
-            <NS.LinkNav exact to="/">
-              Home
-            </NS.LinkNav>
+            <NS.Ancor href="#home">Home</NS.Ancor>
           </NS.Items>
           <NS.Items>
             <NS.Ancor href="#about">About</NS.Ancor>
